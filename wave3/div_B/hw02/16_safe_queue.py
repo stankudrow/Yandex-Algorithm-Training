@@ -32,7 +32,9 @@ class Queue:
         return bool(len(self))
 
     def __len__(self) -> int:
-        return len(self._queue[self._head:]) if self._queue else 0
+        return (
+            len(self._queue[self._head :]) if self._queue else 0
+        )
 
     def __repr__(self) -> str:
         return f"Queue({self._queue})"
@@ -40,7 +42,7 @@ class Queue:
     def _squeeze(self):
         """Reduces the size of the queue after excedding the half of the queue."""
         if self._head > len(self) // 2:
-            self._queue = self._queue[self._head:]
+            self._queue = self._queue[self._head :]
             self._head = 0
 
     def clear(self):
@@ -102,7 +104,6 @@ class Queue:
     def maxlen(self) -> Optional[int]:
         """Returns the maximum length of the stack."""
         return self._maxlen
-
 
 
 MSGS = ["ok", "error", "bye"]
