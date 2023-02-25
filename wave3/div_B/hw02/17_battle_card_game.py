@@ -6,6 +6,7 @@
 
 # pylint: disable=invalid-name
 # pylint: disable=redefined-outer-name
+# pylint: disable=simplifiable-if-expression
 
 from collections import deque
 
