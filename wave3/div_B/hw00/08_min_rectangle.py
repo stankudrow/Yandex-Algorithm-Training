@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 """https://contest.yandex.ru/contest/45468/problems/8/"""
 
+
 # pylint: disable=invalid-name
+
 
 if __name__ == "__main__":
     size = int(input())
